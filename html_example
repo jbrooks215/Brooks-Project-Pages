@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Blog</title>
+    </head>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        .header {
+            font-family: monospace;
+            color: red;
+        }
+        .listheading {
+            font-family:sans-serif;
+            text-align: center;
+        }
+        #First{
+            background-color: red;
+        }
+        #Second{
+            background-color: lightgreen;
+        }
+        #Third{
+            background-color: yellow;
+        }
+        #Fourth{
+            background-color: green;
+        }
+        #Fifth{
+            background-color: orange;
+        }
+        #Sixth{
+            background-color: rgb(227, 125, 227);
+        }
+        .para {
+            font-weight: bold;
+            font-style: italic;
+        }
+        #heading1{
+            text-align: center;
+        }
+        
+        #heading2{
+            text-align: center;
+        }
+        #heading3{
+            text-align: center;
+        }
+        
+        #heading4{
+            text-align: center;
+        }
+        
+        #heading5{
+            text-align: center;
+        }
+        
+        #heading6{
+            text-align: center;
+        }
+    </style>
+    <body>
+        
+        <h1 class="header">Jon's blog</h1>
+
+        <h3 class="header" id = "Contents">Contents</h3>
+        <ul>
+            <li class = "listheading" id = "First"><a href = "#heading1">First post!</a></li>
+            <li class = "listheading" id = "Second"><a href = "#heading2">Second post!</a></li>
+            <li class = "listheading" id = "Third"><a href = "#heading3">Third post!</a></li>
+            <li class = "listheading" id = "Fourth"><a href = "#heading4">Fourth post!</a></li>
+            <li class = "listheading" id = "Fifth"><a href = "#heading5">Fifth post!</a></li>
+            <li class = "listheading" id = "Sixth"><a href = "#heading6">Sixth post!</a></li>
+        </ul>
+        
+        <h2 class="header" id="heading1">First post</h2>
+        <h6>Posted on 08/06/2019</h6>
+        
+        <p class="para">Nothing exciting happened.
+        That is all.
+        </p>
+        
+        <h2 class="header" id="heading2">Second post</h2>
+        <h6>Posted on 08/12/2019</h6>
+        
+        <p class="para">Something exciting happened.
+            The world might end in 2 days - yee haw!
+        </p>        
+        
+        <h2 class="header" id="heading3">Third post</h2>
+        <h6>Posted on 08/16/2019</h6>
+        
+        <p class="para">The world did not end and this info is very very fake.</p>        
+        
+        <h2 class="header" id="heading4">Fourth post</h2>
+        <h6>Posted on 08/22/2019</h6>
+        
+        <p class="para">Fake fake news, and more to come just hold your breathe and keep waiting!</p>        
+        
+        <h2 class="header" id="heading5">Fifth post</h2>
+        <h6>Posted on 08/30/2019</h6>
+        
+        <p class="para">You have probably passed out by now due to holding your breathe, if you wake up from the coma, feel free to move about the cabin!</p>        
+        
+        <h2 class="header" id="heading6">Sixth post</h2>
+        <h6>Posted on 09/02/2019</h6>
+        
+        <p class="para">If you are still inside the cabin, get out!  This is Private Property and you have now been asked to leave!</p>
+        <a href= "#Contents">Return to Contents</a>
+    </body>
+</html>
