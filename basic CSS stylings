@@ -1,0 +1,41 @@
+        body{
+            background-color: lightblue;
+        }
+        .photo1{
+            float:right;
+            margin-right:20px;
+            padding: 30px;
+        }
+        .photo2{
+            float: left;
+            margin-left:5px;
+            padding:30px;
+        }    
+        .photo3{
+            float:left;
+            margin-left: -15%;
+        }
+        .header{
+            text-align: center;
+            color: purple;
+            }
+        .list{
+            width: 88%;
+                    }
+        .items {
+            color: blue;
+            background-color:red;
+        }
+        
+        .dance-party{
+            color: GREEN;
+            font-family: cursive;
+            background-color:purple;
+        }
+        .inform{
+            float: right;
+            width:55%;
+            height:90px;
+            overflow:auto;
+            text-align: center;
+        }
