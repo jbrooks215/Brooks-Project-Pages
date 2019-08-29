@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project: Recipe book</title>
+        <meta charset="utf-8">
+        <style>
+        h1 {
+            color: red;
+        }
+        body{
+            background-color: lightblue;
+        }
+        .list-item {
+            background-color: orange;
+        }
+        .ingredient {
+            font-family: cursive;
+        }
+        #recipe1{
+            color: green;
+        }
+        #recipe2{
+            color: blue;
+        }
+        #recipe3{
+            color: purple;
+        }
+        </style>
+    </head>
+    <body>
+       
+        <h1>Lil Ricky's Recipe Book</h1>
+        
+        <h2 id="Contents">Contents:</h2>
+        
+        <ol>
+            <li class="list-item"><a href="#recipe1">Recipe #1</a></li>
+            <li class="list-item"><a href="#recipe2">Recipe #2</a></li>
+            <li class="list-item"><a href="#recipe3">Recipe #3</a></li>
+        </ol>
+        
+        <h2 id="recipe1">Recipe #1: Spaghetti-Hs</h2>
+        <ul>
+            <li>Time: 15 min</li>
+            <li>Serves: 65</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="ingredient">Spaghetti shaped Hs</td>
+                    <td>200 lbs</td>
+                </tr>
+                <tr>
+                    <td class="ingredient">Marinara Sauce</td>
+                    <td>300 gal</td>   
+                </tr>
+                <tr>
+                    <td class="ingredient">Salt</td>
+                    <td>40 lbs</td>   
+                </tr>                
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> Put all ingredients into a 600 gal vat.
+</p>
+        <p><strong>Step 2:</strong> Heat on high heat for 10 min, stir entire time.
+</p>
+        <p><strong>Step 3:</strong> Let sit and cool for 5 min, then serve.
+</p>
+<a href="#Contents">Back to Contents</a>
+        <h2 id="recipe2">Recipe #2: PB&J</h2>
+        
+        <ul>
+            <li>Time: 30 sec</li>
+            <li>Serves: 1</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="ingredient">Bread</td>
+                    <td>2 slices</td>
+                </tr>
+                    <tr>
+                    <td class="ingredient">Peanut Butter</td>
+                    <td>1 oz</td>
+                </tr>
+                <tr>
+                    <td class="ingredient">Jam/Jelly</td>
+                    <td>2 oz</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> Spread Jam/Jelly on top of piece bread.
+</p>
+        <p><strong>Step 2:</strong> Spread Peanut Butter on the top of the other piece of bread.
+</p>
+        <p><strong>Step 3:</strong> Place Jam/Jelly and Peanut butter pieces of bread together so that the Peanut Butter and Jelly sides form the middle.
+</p>
+<a href="#Contents">Back to Contents</a>
+        <h2 id="recipe3">Recipe #3: Steak and Potatoes</h2>
+        
+        <ul>
+            <li>Time: 25 min</li>
+            <li>Serves: 1</li>
+        </ul>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Ingredients</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="ingredient">Steak</td>
+                    <td>1-16 oz</td>
+                </tr>
+                <tr>
+                    <td class="ingredient">Russet Potatoes</td>
+                    <td>3-6 oz</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <p><strong>Step 1:</strong> Place Steak on grill on high heat until internal color preference is reached.
+</p>
+        <p><strong>Step 2:</strong> Place Potato in oven at 350 for 1 hour.
+</p>
+        <p><strong>Step 3:</strong> Combine ingredients on plate and consume.  Add sauces and butter as desired.
+</p>
+<a href="#Contents">Back to Contents</a>    
+    <p><em>Source: <a href="https://www.google.com/">Search Engine</a></em></p>
+    
+    </body>
+</html>
