@@ -1,0 +1,56 @@
+var book = [{
+    title: "The Giver",
+    stars: 4,
+    author: "Me",
+    coverColor: color(255, 255, 25),
+},
+{
+    title: "The Hobbit",
+    stars: 5,
+    author: "Myself",
+    coverColor: color(0, 255, 0),
+},
+{
+    title: "The Ring",
+    stars: 2,
+    author: "I-self",
+    coverColor: color(255, 0, 0),
+},
+{
+    title: "Cook Book",
+    stars: 3,
+    author: "Mom",
+    coverColor: color(60, 100, 255),
+
+}
+];
+
+// draw shelf
+fill(173, 117, 33);
+rect(0, 120, width, 10);
+
+//books
+for (var numBooks = 0; numBooks < book.length; numBooks ++){
+    fill(book[numBooks].coverColor);
+    rect(numBooks*100+10, 20, 90, 100);//book fill color
+    
+    fill(0, 0, 0);
+    textSize(12);
+    text(book[numBooks].title,numBooks*100+15, 29, 70, 100);//title
+    
+    fill(0, 0, 0);
+    textSize(10);
+    text(book[numBooks].author,numBooks*100+20, 40, 70, 100);//author
+    for (var x = 0; x < book.length; x++){
+        for (var i = 0; i < book[numBooks].stars; i++) {
+            image(getImage("cute/Star"), 13 + i*15 + numBooks*100, 90, 20, 30);
+            
+
+        }
+    }            
+    fill(0, 0, 0);
+    textSize(12);
+    if (book[numBooks].stars > 3){
+    text("Recomend!!!", 13+ i*+ numBooks*20, 80); 
+            }
+}
