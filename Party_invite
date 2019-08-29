@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Project: Event invite</title>
+                /*this is how to add and external style sheet <link rel="stylesheet" type="text/css" href="https://github.com/jbrooks215/Brooks-Project-Pages/blob/master/basic%20CSS%20stylings">*/
         <style>
         body{
             background-color: lightblue;
