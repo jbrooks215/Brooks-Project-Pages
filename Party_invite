@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Project: Event invite</title>
+        <style>
+        body{
+            background-color: lightblue;
+        }
+        .photo1{
+            float:right;
+            margin-right:20px;
+            padding: 30px;
+        }
+        .photo2{
+            float: left;
+            margin-left:5px;
+            padding:30px;
+        }    
+        .photo3{
+            float:left;
+            margin-left: -15%;
+        }
+        .header{
+            text-align: center;
+            color: purple;
+            }
+        .list{
+            width: 88%;
+                    }
+        .items {
+            color: blue;
+            background-color:red;
+        }
+        
+        .dance-party{
+            color: GREEN;
+            font-family: cursive;
+            background-color:purple;
+        }
+        .inform{
+            float: right;
+            width:55%;
+            height:90px;
+            overflow:auto;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        
+        <h1 class="header">You're invited!</h1>
+        <h2 class="header">To Tuesday!</h2>
+<img class="photo1" src="https://www.kasandbox.org/programming-images/creatures/Hopper-Cool.png">
+
+<img class="photo2" src="https://www.kasandbox.org/programming-images/creatures/Hopper-Jumping.png">
+
+        <p>The details:</p>
+        <ul class="list">
+            <li class="items">Drinks</li>
+            <li class="items">Dancing</li>
+            <li class="items">Dubstep</li>
+            <li class="items">Du-Op Group</li>
+            <li class="items">Double Down Duggie Hopper</li>
+        </ul>
+<img class="photo3" src="https://www.kasandbox.org/programming-images/cute/CharacterBoy.png">
+        <p class="inform">This event is for a<span class="dance-party"> random Tuesday Dance Party.</span>  It will happen when you least expect it and will continue until Wednesday.  Don't expect to make it to your other plans when this happpens.
+        </p>
+    </body>
+</html>
