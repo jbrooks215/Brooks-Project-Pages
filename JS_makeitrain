@@ -1,0 +1,32 @@
+var xPositions = [200];
+var yPositions = [0];
+
+var makeRain = function(){
+    background(204, 247, 255);
+    var xColor = random(0, 400);
+    var yColor = random(0, 400);
+    for (var i = 0; i < xPositions.length; i++) {
+        noStroke();
+        fill(xColor, yColor, 255);
+        ellipse(xPositions[i], yPositions[i], 10, 20);
+        ellipse(xPositions[i]+30, yPositions[i], 10, 20);
+        image(getImage("space/star"), xPositions[i]+25, yPositions[i], 40, 40);
+        image(getImage("space/star"), xPositions[i]+10, yPositions[i], 40, 40);
+        if (yPositions[i] < 400 || yPositions[i] < 0){
+            yPositions[i] += 2;
+        }
+        else if (yPositions[i] === 400){
+            yPositions[i] = 0;
+        }
+    }
+};
+
+mouseClicked = function(){
+    xPositions.push (mouseX);
+    yPositions.push (mouseY); 
+    draw = function() {
+    makeRain();
+    makeRain();
+    makeRain();
+     };
+};
