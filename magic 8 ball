@@ -1,0 +1,40 @@
+fill(0, 0, 0);
+ellipse(200, 200, 375, 375);
+fill(60, 0, 255);
+triangle(200, 104, 280, 280, 120, 280);
+fill(255, 255, 255);
+var answer = floor(random(0, 8));
+
+if (answer === 0) {
+    fill(255, 89, 0);
+    text("OUTLOOK", 169, 200);
+    text("VERY LIKELY", 162, 229);
+} else if (answer === 1) {
+    fill(0, 255, 9);
+    text("NONE OF", 170, 200);
+    text("THE ABOVE", 166, 229);
+} else if (answer === 2) {
+    fill(255, 234, 0);
+    text("NOT EVER", 170, 200);
+    text("GOING TO HAPPEN", 144, 244);
+} else if (answer === 3) {
+    fill(230, 30, 80);
+    text("GOOD LUCK", 164, 200);
+    text("---CHUMP---", 167, 229);
+} else if (answer === 4) {
+    fill(0, 255, 0);
+    text("DOESN'T", 176, 200);
+    text("SEEM LIKELY", 159, 229);
+} else if (answer === 5) {
+    fill(8, 20, 8);
+    text("HOPE THIS", 166, 200);
+    text("TURNS OUT", 164, 229);
+} else if (answer === 6) {
+    fill(222, 198, 227);
+    text("FIGURE A", 169, 200);
+    text("NEW PATH", 167, 229);
+} else {
+    fill(230, 196, 191);
+    text("SHAKE", 177, 200);
+    text("AGAIN", 177, 229);
+}
