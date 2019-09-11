@@ -1,0 +1,76 @@
+Sub Intralinks_Go_Getter_Class_l()
+'
+' Intralinks_Go_Getter_Class_l Macro
+' gets "Class" type names and files them for intralinks
+'
+' Keyboard Shortcut: Ctrl+l
+'
+Dim wb1 As Workbook
+Dim wb2 As Workbook
+Dim Sheet As Worksheet
+Dim PasteStart As Range
+
+Set wb1 = ActiveWorkbook
+Set PasteStart = [A1]
+
+Sheets("Sheet1").Select
+    Cells.Select
+    Selection.ClearContents
+
+FileToOpen = Application.GetOpenFilename _
+(Title:="Please choose a Report to Parse", _
+FileFilter:="Report Files *.xlsx (*.xlsx),")
+
+If FileToOpen = False Then
+    MsgBox "No File Specified.", vbExclamation, "ERROR"
+    Exit Sub
+Else
+    Set wb2 = Workbooks.Open(Filename:=FileToOpen)
+
+    For Each Sheet In wb2.Sheets
+        With Sheet.UsedRange
+            .Copy PasteStart
+            Set PasteStart = PasteStart.Offset(.Rows.Count)
+        End With
+    Next Sheet
+
+End If
+
+    wb2.Close
+    
+    Range("E1").Select
+    Dim rng01 As Range
+    Set rng01 = Range("E1")
+    'Set rng01 = Range("a1:t703")
+    rng01.Parent.AutoFilterMode = False
+    rng01.Columns(1).AutoFilter Field:=5, Criteria1:=Array("<>Tranche E*"), VisibleDropDown:=False
+    Range("B1:F1").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Selection.Copy
+    Workbooks.Add
+    ActiveSheet.Paste
+    Application.CutCopyMode = False
+    Dim relativePath As String
+    relativePath = ThisWorkbook.Path & "\" & ActiveWorkbook.Name
+    ActiveWorkbook.SaveAs CurDir & Application.PathSeparator & "Intralinksfile_All.xlsx" _
+        , FileFormat:=xlOpenXMLWorkbook, CreateBackup:=False
+    ActiveWindow.Close
+    Range("E678").Select
+    Selection.End(xlUp).Select
+    Dim rng02 As Range
+    Set rng02 = Range("E1")
+    'Set rng02 = Range("a1:t703")
+    rng02.Parent.AutoFilterMode = False
+    rng02.Columns(1).AutoFilter Field:=5, Criteria1:=Array("Tranche E*"), VisibleDropDown:=False
+    Range("B1:F1").Select
+    Range(Selection, Selection.End(xlDown)).Select
+    Selection.Copy
+    Workbooks.Add
+    ActiveSheet.Paste
+    Application.CutCopyMode = False
+    ActiveWorkbook.SaveAs CurDir & Application.PathSeparator & "Intralinksfile_Employee.xlsx" _
+        , FileFormat:=xlOpenXMLWorkbook, CreateBackup:=False
+    ActiveWindow.Close
+    ActiveSheet.ShowAllData
+    Range("C5").Select
+End Sub
